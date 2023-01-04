@@ -1,0 +1,137 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    align-items: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(images/fundo.jpg);
+}
+.conteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.mars{
+    background-color: #dd5035;
+    height: 270px;
+    width: 270px;
+    border-radius: 50%;
+    
+}
+.crater{
+    background-color: #ca6048;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: relative;
+}
+.crater:before{
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    box-shadow: -5px 0 0 1px #62160a;
+    top: 3px;
+    left: 6px;
+}
+.crater-1{
+    top: 17px;
+    left: 170px;
+    transform: scale(0.9);
+}
+.crater-2{
+    top: 47px;
+    left: 50px;
+    transform: scale(0.7);
+}
+.crater-3{
+    top: 140px;
+    left: 180px;
+    transform: scale(1.18);
+}
+.crater-4{
+    top: 40px;
+    left: 120px;
+    transform: scale(1.9);
+}
+
+.shadow{
+    height: 265px;
+    width: 265px;
+    box-shadow: 23px 0 0 5px rgba(0,0,0,0.15);
+    border-radius: 50%;
+    position: relative;
+    top: -120px;
+    right: 23px;
+}
+.orbit{
+    height: 360px;
+    width: 360px;
+    border-radius: 50%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    animation: spin 5s infinite linear;
+
+}
+@keyframes spin{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.rockt{
+    transform: rotate(40deg);
+    background-color: aliceblue;
+    height: 50px;
+    width: 25px;
+    border-radius: 50% 50% 0 0;
+    position: relative;
+    left: -11px;
+    right: 155px;
+    
+}
+.rockt:before{
+    position: absolute;
+    content: "";
+    background-color: royalblue;
+    height: 25px;
+    width: 65px;
+    z-index: -1;
+    border-radius: 50% 50% 0 0;
+    right: -20px;
+    top: 25px;
+    
+}
+.rockt:after{
+    position: absolute;
+    content: "";
+    background-color: royalblue;
+    height: 5px;
+    width: 15px;
+    border-radius: 0 0 2px 2px;
+    right: 5px;
+    top: 50px;
+}
+.wdw{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: black;
+    border: 2px solid #101844;
+    position: relative;
+    z-index: 1;
+    top: 10px;
+    left: 5px;
+}

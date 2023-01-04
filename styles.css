@@ -102,18 +102,7 @@ body{
     right: 155px;
     
 }
-.rockt:before{
-    position: absolute;
-    content: "";
-    background-color: royalblue;
-    height: 25px;
-    width: 65px;
-    z-index: -1;
-    border-radius: 50% 50% 0 0;
-    right: -20px;
-    top: 25px;
-    
-}
+
 .rockt:after{
     position: absolute;
     content: "";
@@ -123,6 +112,22 @@ body{
     border-radius: 0 0 2px 2px;
     right: 5px;
     top: 50px;
+}
+.wing{
+  background-color: royalblue;
+  height: 20px;
+  width: 20px;
+  border-radius: 50% 0 0 0;
+  position: absolute;
+}
+.wing-1{
+  top: 30px;
+  right: 25px;
+}
+.wing-2{
+  top: 30px;
+  left: 25px;
+  transform: rotateY(180deg);
 }
 .wdw{
     height: 15px;

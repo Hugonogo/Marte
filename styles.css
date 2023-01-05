@@ -66,12 +66,12 @@ body{
 
 .shadow{
     height: 265px;
-    width: 265px;
-    box-shadow: 23px 0 0 5px rgba(0,0,0,0.15);
+    width: 270px;
+    box-shadow: 25px 0 0 2px rgba(0,0,0,0.15);
     border-radius: 50%;
     position: relative;
-    top: -120px;
-    right: 23px;
+    top: -117px;
+    right: 26px;
 }
 .orbit{
     height: 360px;
